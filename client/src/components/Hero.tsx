@@ -9,9 +9,6 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block">
-                <span className="text-green-600 font-semibold text-sm tracking-wide">
-                  ✨ Transforme sua presença online
-                </span>
               </div>
               <h1 
                 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight"
