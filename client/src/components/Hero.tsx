@@ -62,7 +62,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-green-200 to-green-100 rounded-3xl blur-3xl opacity-30"></div>
               <img
-                src="../public/images/home.png"
+                src="images/home.png"
                 alt="Desenvolvimento Web"
                 className="relative w-full h-auto rounded-2xl object-cover"
               />
