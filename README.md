@@ -190,7 +190,7 @@ Este projeto é propriedade da Altum Sistemas.
 ## 🤝 Suporte
 
 Para dúvidas ou sugestões:
-- Email: contato@altum.com
+- Email: contatoaltumsistmas@gmail.com
 - Telefone: (11) 99999-9999
 
 ---

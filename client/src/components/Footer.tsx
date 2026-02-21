@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="../public/images/logo.png" 
+                src="simages/logo.png" 
                 alt="Altum Sistemas" 
                 className="w-10 h-10 object-contain"
               />
@@ -56,9 +56,6 @@ export default function Footer() {
               </a>
               <a href="https://www.linkedin.com/in/albiere-costa-a94306145/" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-smooth">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-green-600 transition-smooth">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
