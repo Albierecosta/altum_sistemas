@@ -18,7 +18,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img 
-              src="../public/image/logo.png" 
+              src="../public/images/logo.png" 
               alt="Altum Sistemas" 
               className="w-15 h-15 object-contain"
             />

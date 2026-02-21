@@ -6,21 +6,21 @@ const projects = [
     category: 'Site',
     description: 'Site institucional para empresa de transporte rodoviário, com otimização SEO e integração Google Analytics',
     link: 'https://expressolupo.com.br/',
-    image: '../public/image/logo-expresso-lupo.jpeg'
+    image: '../public/images/logo-expresso-lupo.jpeg'
   },
   {
     title: 'Site Imobiliária',
     category: 'Site + SEO',
     description: 'Site para imobiliária com sistema de busca de imóveis, otimização SEO',
     link: 'https://www.wmimoveis.com.br/',
-    image: '../public/image/logo-wm-imoveis.png'
+    image: '../public/images/logo-wm-imoveis.png'
   },
   {
     title: 'Agência de Marketing',
     category: 'Corporativo',
     description: 'Site corporativo com portfólio e sistema de contato integrado',
     link: 'https://www.altumsistemas.com.br/',
-    image: '../public/image/altum.png'
+    image: '../public/images/altum.png'
   }
 ];
 

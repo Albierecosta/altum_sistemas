@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img 
-                src="../public/image/logo.png" 
+                src="../public/images/logo.png" 
                 alt="Altum Sistemas" 
                 className="w-10 h-10 object-contain"
               />
