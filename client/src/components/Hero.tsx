@@ -8,31 +8,35 @@ export default function Hero() {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="inline-block">
+              <div className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-white px-4 py-2 text-sm font-semibold text-teal-800">
+                Altum Sistemas · Portfólio & Presença Digital
               </div>
-              <h1 
-                className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight"
-                style={{ fontFamily: 'Playfair Display' }}
-              >
-                Padronização & Google Meu Negócio
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight text-balance">
+                Design digital com estética, clareza e identidade
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-                Desenvolvemos sites profissionais e otimizamos sua presença no Google para atrair mais clientes.
+              <p className="text-xl text-gray-600 leading-relaxed max-w-xl font-medium">
+                Desenvolvemos sites e portfólios com acabamento premium para empresas que valorizam presença institucional forte e comunicação profissional.
               </p>
             </div>
 
             {/* Benefits */}
             <div className="space-y-3">
               {[
-                'Sites modernos e responsivos',
-                'Otimização Google Meu Negócio',
-                'Aumento de conversões garantido'
+                'Direção visual personalizada para sua marca',
+                'Estrutura limpa, rápida e responsiva',
+                'Otimização para presença local no Google'
               ].map((benefit) => (
                 <div key={benefit} className="flex items-center gap-3">
-                  <CheckCircle2 size={20} className="text-green-600 flex-shrink-0" />
+                  <CheckCircle2 size={20} className="text-teal-700 flex-shrink-0" />
                   <span className="text-gray-700 font-medium">{benefit}</span>
                 </div>
               ))}
+            </div>
+
+            <div className="surface-premium rounded-2xl p-5 max-w-xl shadow-soft">
+              <p className="text-slate-700 font-medium">
+                Cada projeto é construído com foco em consistência visual, performance e experiência do usuário.
+              </p>
             </div>
 
             {/* CTA Buttons */}
@@ -41,15 +45,16 @@ export default function Hero() {
                 href="https://wa.me/5537991309341"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-accent text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg transform hover:scale-105"
+                className="gradient-accent text-white px-8 py-4 rounded-xl font-semibold tracking-wide flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg transform hover:scale-105"
               >
-                Solicitar Orçamento
+                Falar sobre meu projeto
+                <ArrowRight size={18} />
               </a>
               <a
                 href="#portfolio"
-                className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg font-semibold transition-smooth hover:bg-green-50"
+                className="border-2 border-teal-700 text-teal-800 px-8 py-4 rounded-xl font-semibold transition-smooth hover:bg-teal-50"
               >
-                Ver Portfólio
+                Ver portfólio
               </a>
             </div>
           </div>
@@ -57,11 +62,11 @@ export default function Hero() {
           {/* Right Image */}
           <div className="hidden md:block">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-200 to-green-100 rounded-3xl blur-3xl opacity-30"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-teal-200 to-cyan-100 rounded-3xl blur-3xl opacity-40"></div>
               <img
                 src="images/home.png"
                 alt="Desenvolvimento Web"
-                className="relative w-full h-auto rounded-2xl object-cover"
+                className="relative w-full h-auto rounded-3xl object-cover border border-white/70 shadow-soft-lg"
               />
             </div>
           </div>

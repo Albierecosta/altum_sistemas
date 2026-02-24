@@ -12,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-soft">
+    <header className="fixed w-full top-0 z-50 bg-white/75 backdrop-blur-xl border-b border-slate-200/70 shadow-soft">
       <div className="container">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -23,10 +23,10 @@ export default function Header() {
               className="w-15 h-15 object-contain"
             />
             <div className="flex flex-col">
-              <span className="font-bold text-gray-900" style={{ fontFamily: 'Playfair Display' }}>
+              <span className="font-display text-2xl leading-none font-bold text-gray-900">
                 Altum
               </span>
-              <span className="text-xs text-green-600 font-medium">Sistemas</span>
+              <span className="text-xs text-teal-700 font-semibold tracking-wide uppercase">Sistemas</span>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function Header() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-gray-700 hover:text-green-600 transition-smooth font-medium text-sm"
+                className="text-slate-700 hover:text-teal-700 transition-smooth font-semibold text-sm tracking-wide"
               >
                 {item.label}
               </a>
@@ -45,7 +45,7 @@ export default function Header() {
                 href="https://wa.me/5537991309341"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-accent text-white px-6 py-2 rounded-lg font-medium transition-smooth hover:shadow-soft-lg transform hover:scale-105"
+                className="gradient-accent text-white px-6 py-2 rounded-xl font-semibold transition-smooth hover:shadow-soft-lg transform hover:scale-105"
               >
                 Orçamento
               </a>
@@ -54,7 +54,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-900"
+            className="md:hidden text-slate-900"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -62,18 +62,18 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 border-t border-gray-200">
+          <div className="md:hidden pb-4 border-t border-slate-200">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="block py-3 text-gray-700 hover:text-green-600 transition-smooth font-medium"
+                className="block py-3 text-slate-700 hover:text-teal-700 transition-smooth font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
               </a>
             ))}
-            <button className="w-full gradient-accent text-white py-2 rounded-lg font-medium mt-4 transition-smooth hover:shadow-soft-lg">
+            <button className="w-full gradient-accent text-white py-2 rounded-xl font-semibold mt-4 transition-smooth hover:shadow-soft-lg">
               Orçamento
             </button>
           </div>

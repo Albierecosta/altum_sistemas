@@ -30,28 +30,29 @@ export default function Contact() {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 
-            className="text-4xl md:text-5xl font-bold text-gray-900"
-            style={{ fontFamily: 'Playfair Display' }}
-          >
+          <h2 className="text-4xl md:text-6xl font-bold text-slate-900">
             Entre em Contato
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Pronto para transformar sua presença digital? Fale conosco e receba um orçamento personalizado
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            Compartilhe seu objetivo e retornamos com uma proposta alinhada ao perfil da sua empresa.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-6">
+            <div className="surface-premium rounded-2xl p-5">
+              <p className="text-sm font-semibold text-teal-700 uppercase tracking-widest mb-2">Resposta Rápida</p>
+              <p className="text-slate-700 font-medium">Retorno em até 24h úteis.</p>
+            </div>
             {/* Email */}
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Mail size={24} className="text-green-600" />
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Mail size={24} className="text-teal-700" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Email</h3>
-                <a href="mailto:contatoaltumsitemas@gmail.com" className="text-gray-600 hover:text-green-600 transition-smooth">
+                <h3 className="font-bold text-slate-900 mb-1">Email</h3>
+                <a href="mailto:contatoaltumsitemas@gmail.com" className="text-slate-600 hover:text-teal-700 transition-smooth">
                   contatoaltumsitemas@gmail.com
                 </a>
               </div>
@@ -59,24 +60,25 @@ export default function Contact() {
 
             {/* Phone */}
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Phone size={24} className="text-green-600" />
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <Phone size={24} className="text-teal-700" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Telefone</h3>
-                <a href="tel:+5537991309341" className="text-gray-600 hover:text-green-600 transition-smooth">
-                  (37) 99130-9341               </a>
+                <h3 className="font-bold text-slate-900 mb-1">Telefone</h3>
+                <a href="tel:+5537991309341" className="text-slate-600 hover:text-teal-700 transition-smooth">
+                  (37) 99130-9341
+                </a>
               </div>
             </div>
 
             {/* Location */}
             <div className="flex gap-4">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                <MapPin size={24} className="text-green-600" />
+              <div className="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                <MapPin size={24} className="text-teal-700" />
               </div>
               <div>
-                <h3 className="font-bold text-gray-900 mb-1">Localização</h3>
-                <p className="text-gray-600">
+                <h3 className="font-bold text-slate-900 mb-1">Localização</h3>
+                <p className="text-slate-600">
                   Pará de Minas, MG<br />
                   Brasil
                 </p>
@@ -85,11 +87,11 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="md:col-span-2 space-y-6">
+          <form onSubmit={handleSubmit} className="md:col-span-2 space-y-6 surface-premium p-6 md:p-8 rounded-2xl shadow-soft">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-slate-900 mb-2">
                   Nome Completo
                 </label>
                 <input
@@ -98,7 +100,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-100 outline-none transition-smooth"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-100 outline-none transition-smooth"
                   placeholder="Seu nome"
                   required
                 />
@@ -106,7 +108,7 @@ export default function Contact() {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
                   Email
                 </label>
                 <input
@@ -115,7 +117,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-100 outline-none transition-smooth"
+                  className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-100 outline-none transition-smooth"
                   placeholder="seu@email.com"
                   required
                 />
@@ -124,7 +126,7 @@ export default function Contact() {
 
             {/* Phone */}
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
+              <label htmlFor="phone" className="block text-sm font-semibold text-slate-900 mb-2">
                 Telefone
               </label>
               <input
@@ -133,14 +135,14 @@ export default function Contact() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-100 outline-none transition-smooth"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-100 outline-none transition-smooth"
                 placeholder="(11) 99999-9999"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
+              <label htmlFor="message" className="block text-sm font-semibold text-slate-900 mb-2">
                 Mensagem
               </label>
               <textarea
@@ -149,7 +151,7 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 rows={5}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-100 outline-none transition-smooth resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-100 outline-none transition-smooth resize-none"
                 placeholder="Conte-nos sobre seu projeto..."
                 required
               ></textarea>
@@ -158,7 +160,7 @@ export default function Contact() {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full gradient-accent text-white py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg transform hover:scale-105"
+              className="w-full gradient-accent text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg transform hover:scale-105"
             >
               Enviar Mensagem
               <Send size={20} />

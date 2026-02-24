@@ -3,22 +3,25 @@ import { ExternalLink } from 'lucide-react';
 const projects = [
   {
     title: 'Expresso Lupo',
-    category: 'Site',
-    description: 'Site institucional para empresa de transporte rodoviário, com otimização SEO e integração Google Analytics',
+    category: 'Site Institucional',
+    description: 'Projeto institucional para fortalecer credibilidade da marca no setor de transporte.',
+    scope: 'Escopo: identidade digital, estrutura e conteúdo',
     link: 'https://expressolupo.com.br/',
     image: 'images/logo-expresso-lupo.jpeg'
   },
   {
     title: 'Site Imobiliária',
-    category: 'Site + SEO',
-    description: 'Site para imobiliária com sistema de busca de imóveis, otimização SEO',
+    category: 'Site + SEO Local',
+    description: 'Site para imobiliária com foco em usabilidade, organização de imóveis e presença local.',
+    scope: 'Escopo: arquitetura, busca e otimização local',
     link: 'https://www.wmimoveis.com.br/',
     image: 'images/logo-wm-imoveis.png'
   },
   {
     title: 'Agência de Marketing',
     category: 'Corporativo',
-    description: 'Site corporativo com portfólio e sistema de contato integrado',
+    description: 'Presença corporativa para apresentar serviços, portfólio e comunicação institucional.',
+    scope: 'Escopo: layout, conteúdo e formulário integrado',
     link: 'https://www.altumsistemas.com.br/',
     image: 'images/altum.png'
   }
@@ -30,14 +33,11 @@ export default function Portfolio() {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <h2 
-            className="text-4xl md:text-5xl font-bold text-gray-900"
-            style={{ fontFamily: 'Playfair Display' }}
-          >
-            Nossos Projetos
+          <h2 className="text-4xl md:text-6xl font-bold text-slate-900">
+            Projetos Selecionados
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Conheça alguns dos sites que desenvolvemos e otimizamos para nossos clientes
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+            Alguns trabalhos desenvolvidos pela Altum Sistemas em diferentes segmentos.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group rounded-2xl overflow-hidden shadow-soft hover:shadow-soft-lg transition-smooth border border-gray-100 hover:border-green-200"
+                className="group rounded-2xl overflow-hidden shadow-soft hover:shadow-soft-lg transition-smooth border border-slate-200 hover:border-teal-300 bg-white"
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden bg-gray-200">
@@ -62,18 +62,19 @@ export default function Portfolio() {
 
               {/* Content */}
               <div className="p-6">
-                <span className="text-xs font-semibold text-green-600 uppercase tracking-wider">
+                <span className="text-xs font-semibold text-teal-700 uppercase tracking-wider">
                   {project.category}
                 </span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2 mb-2" style={{ fontFamily: 'Playfair Display' }}>
+                <h3 className="text-2xl font-bold text-slate-900 mt-2 mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-slate-600 text-sm mb-4">
                   {project.description}
                 </p>
+                <p className="text-sm font-semibold text-slate-900 mb-4">{project.scope}</p>
                 <a
                   href={project.link}
-                  className="inline-flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 transition-smooth"
+                  className="inline-flex items-center gap-2 text-teal-700 font-semibold hover:text-teal-800 transition-smooth"
                 >
                   Visualizar
                   <ExternalLink size={16} />
@@ -85,16 +86,16 @@ export default function Portfolio() {
 
         {/* CTA */}
         <div className="text-center">
-          <p className="text-gray-600 mb-6">
-            Quer ver mais projetos? Entre em contato para conhecer nosso portfólio completo
+          <p className="text-slate-600 mb-6">
+            Quer conversar sobre o seu projeto? Entre em contato e vamos construir algo alinhado à sua marca.
           </p>
               <a
                 href="https://wa.me/5537991309341"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="gradient-accent text-white px-8 py-3 rounded-lg font-semibold transition-smooth hover:shadow-soft-lg transform hover:scale-105"
+                className="gradient-accent text-white px-8 py-3 rounded-xl font-semibold transition-smooth hover:shadow-soft-lg transform hover:scale-105"
               >
-                Solicitar Orçamento Completo
+                Solicitar proposta
               </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
  * Design Philosophy: Elegância Premium com Gradientes Sutis
  * 
  * - Paleta: Verde (#10B981), Branco, Preto
- * - Tipografia: Playfair Display (títulos), Lato (corpo)
+ * - Tipografia: Syne (títulos), Manrope (corpo)
  * - Gradientes suaves verde-branco transmitem sofisticação
  * - Sombras refinadas e espaçamento generoso
  * - Animações suaves e transições elegantes
