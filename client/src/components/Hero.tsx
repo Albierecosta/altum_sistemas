@@ -61,13 +61,41 @@ export default function Hero() {
 
           {/* Right Image */}
           <div className="hidden md:block">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-200 to-cyan-100 rounded-3xl blur-3xl opacity-40"></div>
-              <img
-                src="images/home.png"
-                alt="Desenvolvimento Web"
-                className="relative w-full h-auto rounded-3xl object-cover border border-white/70 shadow-soft-lg"
-              />
+            <div className="relative min-h-[420px]">
+              <div className="absolute -inset-4 bg-gradient-to-br from-teal-200/70 to-cyan-100/70 rounded-3xl blur-3xl opacity-40"></div>
+
+              <article className="relative surface-premium rounded-3xl p-5 shadow-soft-lg">
+                <p className="text-xs font-semibold tracking-[0.16em] uppercase text-teal-700 mb-3">
+                  Projeto em destaque
+                </p>
+                <img
+                  src="images/logo-expresso-lupo.jpeg"
+                  alt="Projeto Expresso Lupo"
+                  className="w-full h-[260px] rounded-2xl object-cover border border-slate-200"
+                />
+                <div className="mt-4">
+                  <p className="text-slate-900 font-semibold">Expresso Lupo</p>
+                  <p className="text-sm text-slate-600">Site institucional com foco em presença digital.</p>
+                </div>
+              </article>
+
+              <article className="absolute -bottom-8 -left-8 surface-premium rounded-2xl p-4 shadow-soft w-56">
+                <img
+                  src="images/logo-wm-imoveis.png"
+                  alt="Projeto Site Imobiliária"
+                  className="w-full h-20 object-contain"
+                />
+                <p className="mt-2 text-xs font-medium text-slate-600">Projeto imobiliário</p>
+              </article>
+
+              <article className="absolute -top-8 -right-6 surface-premium rounded-2xl p-4 shadow-soft w-40">
+                <img
+                  src="images/altum.png"
+                  alt="Projeto Agência de Marketing"
+                  className="w-full h-20 object-contain"
+                />
+                <p className="mt-2 text-xs font-medium text-slate-600 text-center">Projeto corporativo</p>
+              </article>
             </div>
           </div>
         </div>
