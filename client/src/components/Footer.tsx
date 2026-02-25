@@ -1,23 +1,25 @@
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-300 py-12">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img 
-                src="images/logo.png" 
-                alt="Altum Sistemas" 
+              <img
+                src="images/logo.png"
+                alt="Altum Sistemas"
                 className="w-10 h-10 object-contain"
               />
               <div>
                 <span className="font-display text-2xl leading-none font-bold text-white">
                   Altum
                 </span>
-                <span className="text-xs text-teal-400 block uppercase tracking-widest">Sistemas</span>
+                <span className="text-xs text-teal-400 block uppercase tracking-widest">
+                  Sistemas
+                </span>
               </div>
             </div>
             <p className="text-sm text-slate-400">
@@ -25,43 +27,77 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
           <div>
             <h4 className="font-bold text-white mb-4">Serviços</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#servicos" className="hover:text-teal-300 transition-smooth">Desenvolvimento Web</a></li>
-              <li><a href="#servicos" className="hover:text-teal-300 transition-smooth">Google Meu Negócio</a></li>
-              <li><a href="#servicos" className="hover:text-teal-300 transition-smooth">Performance Web</a></li>
-              <li><a href="#servicos" className="hover:text-teal-300 transition-smooth">Consultoria Digital</a></li>
+              <li>
+                <Link href="/servicos" className="hover:text-teal-300 transition-smooth">
+                  Desenvolvimento Web
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos" className="hover:text-teal-300 transition-smooth">
+                  Google Meu Negócio
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos" className="hover:text-teal-300 transition-smooth">
+                  Performance Web
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicos" className="hover:text-teal-300 transition-smooth">
+                  Consultoria Digital
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h4 className="font-bold text-white mb-4">Empresa</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#inicio" className="hover:text-teal-300 transition-smooth">Sobre</a></li>
-              <li><a href="#portfolio" className="hover:text-teal-300 transition-smooth">Portfólio</a></li>
-              <li><a href="#contato" className="hover:text-teal-300 transition-smooth">Contato</a></li>
-              <li><a href="#" className="hover:text-teal-300 transition-smooth">Blog</a></li>
+              <li>
+                <Link href="/" className="hover:text-teal-300 transition-smooth">
+                  Sobre
+                </Link>
+              </li>
+              <li>
+                <Link href="/portfolio" className="hover:text-teal-300 transition-smooth">
+                  Portfólio
+                </Link>
+              </li>
+              <li>
+                <Link href="/contato" className="hover:text-teal-300 transition-smooth">
+                  Contato
+                </Link>
+              </li>
+              <li>
+                <a href="#" className="hover:text-teal-300 transition-smooth">
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Social */}
           <div>
             <h4 className="font-bold text-white mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/altumsistemas/" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-teal-700 transition-smooth">
+              <a
+                href="https://www.instagram.com/altumsistemas/"
+                className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-teal-700 transition-smooth"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="https://www.linkedin.com/in/albiere-costa-a94306145/" className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-teal-700 transition-smooth">
+              <a
+                href="https://www.linkedin.com/in/albiere-costa-a94306145/"
+                className="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-teal-700 transition-smooth"
+              >
                 <Linkedin size={20} />
               </a>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-slate-400">
             <p>&copy; 2026 Altum Sistemas. Todos os direitos reservados.</p>

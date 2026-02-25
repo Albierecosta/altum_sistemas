@@ -184,7 +184,8 @@
   .gradient-hero {
     background:
       radial-gradient(circle at 78% 20%, rgba(15, 118, 110, 0.16) 0%, transparent 38%),
-      linear-gradient(145deg, #f0fdfa 0%, #ffffff 45%, #f8fafc 100%);
+      radial-gradient(circle at 8% 76%, rgba(14, 165, 233, 0.12) 0%, transparent 40%),
+      linear-gradient(145deg, #ecfeff 0%, #ffffff 45%, #f8fafc 100%);
   }
 
   .gradient-section {
@@ -199,6 +200,27 @@
     background: rgba(255, 255, 255, 0.86);
     border: 1px solid rgba(148, 163, 184, 0.2);
     backdrop-filter: blur(12px);
+  }
+
+  .surface-dark {
+    background: linear-gradient(165deg, #0f172a 0%, #111827 45%, #0b1120 100%);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+  }
+
+  .grid-noise {
+    background-image:
+      linear-gradient(rgba(15, 118, 110, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 118, 110, 0.08) 1px, transparent 1px);
+    background-size: 26px 26px;
+    background-position: center center;
+  }
+
+  .glow-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(46px);
+    opacity: 0.45;
+    pointer-events: none;
   }
 
   /* Smooth transitions */
@@ -223,5 +245,39 @@
   .font-display {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
+  }
+
+  .reveal-up {
+    animation: revealUp 0.7s ease-out both;
+  }
+
+  .float-soft {
+    animation: floatSoft 6s ease-in-out infinite;
+  }
+
+  .float-soft-delayed {
+    animation: floatSoft 7.5s ease-in-out infinite;
+    animation-delay: 0.7s;
+  }
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
