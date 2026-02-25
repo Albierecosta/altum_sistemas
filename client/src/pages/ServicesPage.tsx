@@ -29,7 +29,7 @@ export default function ServicesPage() {
             Quer combinar esses serviços em um pacote para sua empresa?
           </p>
           <a
-            href="https://wa.me/5537991309341"
+            href="https://wa.me/5537991272109"
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-accent text-white px-8 py-3 rounded-xl font-semibold transition-smooth hover:shadow-soft-lg inline-flex items-center gap-2"

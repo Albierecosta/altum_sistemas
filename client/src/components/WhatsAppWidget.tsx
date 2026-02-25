@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_LINK =
-  "https://wa.me/5537991309341?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Altum%20Sistemas%20e%20quero%20um%20or%C3%A7amento.";
+  "https://wa.me/5537991272109?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Altum%20Sistemas%20e%20quero%20um%20or%C3%A7amento.";
 
 export default function WhatsAppWidget() {
   return (

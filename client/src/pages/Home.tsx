@@ -48,7 +48,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://wa.me/5537991309341"
+                  href="https://wa.me/5537991272109"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="gradient-accent text-white px-8 py-4 rounded-xl font-semibold tracking-wide inline-flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg"
@@ -153,7 +153,7 @@ export default function Home() {
                 <p className="text-3xl md:text-4xl">Seu site pode ficar nesse padrão ainda essa semana.</p>
               </div>
               <a
-                href="https://wa.me/5537991309341"
+                href="https://wa.me/5537991272109"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-slate-900 px-6 py-3 rounded-xl font-semibold inline-flex items-center justify-center gap-2 transition-smooth hover:bg-slate-100"

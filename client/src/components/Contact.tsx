@@ -65,8 +65,8 @@ export default function Contact() {
               </div>
               <div>
                 <h3 className="font-bold text-slate-900 mb-1">Telefone</h3>
-                <a href="tel:+5537991309341" className="text-slate-600 hover:text-teal-700 transition-smooth">
-                  (37) 99130-9341
+                <a href="tel:+5537991272109" className="text-slate-600 hover:text-teal-700 transition-smooth">
+                  (37) 99127-2109
                 </a>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function Contact() {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-teal-700 focus:ring-2 focus:ring-teal-100 outline-none transition-smooth"
-                placeholder="(11) 99999-9999"
+                placeholder="(37) 99127-2109"
               />
             </div>
 

@@ -48,7 +48,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://wa.me/5537991309341"
+              href="https://wa.me/5537991272109"
               target="_blank"
               rel="noopener noreferrer"
               className="gradient-accent text-white px-6 py-2 rounded-xl font-semibold transition-smooth hover:shadow-soft-lg transform hover:scale-105"
@@ -83,7 +83,7 @@ export default function Header() {
               </Link>
             ))}
             <a
-              href="https://wa.me/5537991309341"
+              href="https://wa.me/5537991272109"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center w-full gradient-accent text-white py-2 rounded-xl font-semibold mt-4 transition-smooth hover:shadow-soft-lg"

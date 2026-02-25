@@ -90,7 +90,7 @@ export default function Portfolio() {
             Quer conversar sobre o seu projeto? Entre em contato e vamos construir algo alinhado à sua marca.
           </p>
               <a
-                href="https://wa.me/5537991309341"
+                href="https://wa.me/5537991272109"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-accent text-white px-8 py-3 rounded-xl font-semibold transition-smooth hover:shadow-soft-lg transform hover:scale-105"

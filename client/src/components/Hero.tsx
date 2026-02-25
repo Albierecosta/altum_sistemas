@@ -42,7 +42,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="https://wa.me/5537991309341"
+                href="https://wa.me/5537991272109"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-accent text-white px-8 py-4 rounded-xl font-semibold tracking-wide flex items-center justify-center gap-2 transition-smooth hover:shadow-soft-lg transform hover:scale-105"
